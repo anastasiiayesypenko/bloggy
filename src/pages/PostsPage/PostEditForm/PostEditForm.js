@@ -196,7 +196,8 @@ class PostEditForm extends Component {
     });
   };
 
-  addComment = () => {
+  addComment = e => {
+    e.preventDefault();
     const { commentText, commentsAboutPost } = this.state;
     const { addComment, match } = this.props;
 
@@ -223,45 +224,43 @@ class PostEditForm extends Component {
 
     return (
       <div>
+        {' '}
         {posts && (
           <StyledForm>
             <StyledInput
               type="text"
               onChange={this.handleTitleChange}
               value={postTitle}
-            />
-
+            />{' '}
             <StyledTextarea
               type="text"
               onChange={this.handleTextChange}
               value={postText}
-            />
-
+            />{' '}
             <StyledButton
               type="button"
               onClick={this.handleSaveEdition}
               disabled={buttonSaveDisabled}
             >
-              Save changes
-            </StyledButton>
+              Save changes{' '}
+            </StyledButton>{' '}
           </StyledForm>
-        )}
-
+        )}{' '}
         <section>
+          {' '}
           {commentsAboutPost.length > 0 && (
             <StyledCommentsDiv>
-              <StyledCommentsTitle> Comments: </StyledCommentsTitle>
-
+              <StyledCommentsTitle> Comments: </StyledCommentsTitle>{' '}
               <StyledCommentsUl>
+                {' '}
                 {commentsAboutPost.map(comment => (
                   <StyledCommentsLI key={comment.id}>
-                    <p> {comment.body} </p>
+                    <p> {comment.body} </p>{' '}
                   </StyledCommentsLI>
-                ))}
-              </StyledCommentsUl>
+                ))}{' '}
+              </StyledCommentsUl>{' '}
             </StyledCommentsDiv>
-          )}
-
+          )}{' '}
           <StyledCommentForm onSubmit={this.addComment}>
             <StyledCommentInput
               type="text"
@@ -269,14 +268,15 @@ class PostEditForm extends Component {
               value={commentText}
               placeholder="Enter your comment here"
             />
-            <StyledButtonComment type="submit">Add comment</StyledButtonComment>
-          </StyledCommentForm>
-        </section>
-
+            <StyledButtonComment type="submit">
+              {' '}
+              Add comment{' '}
+            </StyledButtonComment>{' '}
+          </StyledCommentForm>{' '}
+        </section>{' '}
         <StyledButton>
-          <NavLink to="/posts"> Back to all posts </NavLink>
-        </StyledButton>
-
+          <NavLink to="/posts"> Back to all posts </NavLink>{' '}
+        </StyledButton>{' '}
         <ToastContainer />
       </div>
     );
