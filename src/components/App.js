@@ -30,10 +30,7 @@ class App extends Component {
 
           <Route path="/posts" component={PostsPage} />
 
-          <Redirect
-            to="/
-      "
-          />
+          <Redirect to="/" />
         </Switch>
       </StyledWrapper>
     );

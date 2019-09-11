@@ -93,7 +93,9 @@ const StyledCommentsLI = styled.li`
 const StyledCommentForm = styled.form`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin: 0 auto;
+  padding: 30px;
   width: 1000px;
   margin-top: 20px;
   border-radius: 2px;
@@ -110,7 +112,7 @@ const StyledButtonComment = styled.button`
   color: #fff;
   cursor: pointer;
   background-color: #1e8a71;
-  width: 200px;
+  width: 290px;
   margin: 0 auto;
   text-align: center;
   font-weight: 300;
@@ -231,12 +233,12 @@ class PostEditForm extends Component {
               type="text"
               onChange={this.handleTitleChange}
               value={postTitle}
-            />{' '}
+            />
             <StyledTextarea
               type="text"
               onChange={this.handleTextChange}
               value={postText}
-            />{' '}
+            />
             <StyledButton
               type="button"
               onClick={this.handleSaveEdition}
@@ -250,7 +252,7 @@ class PostEditForm extends Component {
           {' '}
           {commentsAboutPost.length > 0 && (
             <StyledCommentsDiv>
-              <StyledCommentsTitle> Comments: </StyledCommentsTitle>{' '}
+              <StyledCommentsTitle> Comments: </StyledCommentsTitle>
               <StyledCommentsUl>
                 {' '}
                 {commentsAboutPost.map(comment => (
@@ -260,7 +262,7 @@ class PostEditForm extends Component {
                 ))}{' '}
               </StyledCommentsUl>{' '}
             </StyledCommentsDiv>
-          )}{' '}
+          )}
           <StyledCommentForm onSubmit={this.addComment}>
             <StyledCommentInput
               type="text"
@@ -274,10 +276,7 @@ class PostEditForm extends Component {
             </StyledButtonComment>{' '}
           </StyledCommentForm>{' '}
         </section>{' '}
-        <StyledButton>
-          <NavLink to="/posts"> Back to all posts </NavLink>{' '}
-        </StyledButton>{' '}
-        <ToastContainer />
+        <NavLink to="/posts"> Back to all posts </NavLink> <ToastContainer />
       </div>
     );
   }
