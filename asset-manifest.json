@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/bloggy/static/css/main.43f4691e.chunk.css",
-    "main.js": "/bloggy/static/js/main.d6c0eead.chunk.js",
-    "main.js.map": "/bloggy/static/js/main.d6c0eead.chunk.js.map",
+    "main.js": "/bloggy/static/js/main.9dab21cf.chunk.js",
+    "main.js.map": "/bloggy/static/js/main.9dab21cf.chunk.js.map",
     "runtime~main.js": "/bloggy/static/js/runtime~main.e3b253fb.js",
     "runtime~main.js.map": "/bloggy/static/js/runtime~main.e3b253fb.js.map",
     "static/css/2.39017165.chunk.css": "/bloggy/static/css/2.39017165.chunk.css",
     "static/js/2.787a28a8.chunk.js": "/bloggy/static/js/2.787a28a8.chunk.js",
     "static/js/2.787a28a8.chunk.js.map": "/bloggy/static/js/2.787a28a8.chunk.js.map",
     "index.html": "/bloggy/index.html",
-    "precache-manifest.fecc012e2121879c52969c338e2a8d3b.js": "/bloggy/precache-manifest.fecc012e2121879c52969c338e2a8d3b.js",
+    "precache-manifest.3b71d31a0f74f8a803843f0aae32fd70.js": "/bloggy/precache-manifest.3b71d31a0f74f8a803843f0aae32fd70.js",
     "service-worker.js": "/bloggy/service-worker.js",
     "static/css/2.39017165.chunk.css.map": "/bloggy/static/css/2.39017165.chunk.css.map",
     "static/css/main.43f4691e.chunk.css.map": "/bloggy/static/css/main.43f4691e.chunk.css.map"
